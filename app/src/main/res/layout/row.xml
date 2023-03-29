@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="end|bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvISBN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ISBN"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="3dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibCopy"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/copy_icon" />
+
+            <ImageButton
+                android:id="@+id/ibEdit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/edit_icon" />
+
+
+            <ImageButton
+                android:id="@+id/ibDelete"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/delete_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
